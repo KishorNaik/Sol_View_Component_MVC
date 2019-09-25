@@ -1,0 +1,49 @@
+@model Sol_VC.Models.TaskModel
+
+        <div class="col-4">
+
+            <div class="card">
+                <div class="card-header">
+                    Total Tasks
+                </div>
+                <div class="card-body">
+                    <h5>@Model.TotalTask</h5>
+                </div>
+            </div>
+
+        </div>
+
+        @if(Model.TotalCompleteTask!=0)
+        {
+            <div class="col-4">
+
+                <div class="card">
+                    <div class="card-header">
+                        Total Tasks
+                    </div>
+                    <div class="card-body">
+                        <h5>@Model.TotalCompleteTask</h5>
+                    </div>
+                </div>
+
+            </div>
+            
+        }
+
+        @if(Model.TotalPendingTask!=0)
+        {
+            <div class="col-4">
+
+                <div class="card">
+                    <div class="card-header">
+                        Total Tasks
+                    </div>
+                    <div class="card-body">
+                        <h5>@Model.TotalPendingTask</h5>
+                    </div>
+                </div>
+
+            </div>
+            
+        }
+
